@@ -1,0 +1,23 @@
+package com.javaprograms;
+
+public class Armstrong_Number {
+	public static void main(String[] args) {
+		int a = 370;
+		int temp = a;
+		int rem = 0;
+		int value = 0;
+		
+		while(temp>0) {
+			rem = temp%10;
+			value = value+(rem*rem*rem);
+			temp = temp/10;
+		}
+		if(a==value) {
+			System.out.println("Armstrong Number");
+		}
+		else {
+			System.out.println("Not Armstrong Number");
+		}
+	}
+
+}
